@@ -36,41 +36,52 @@
 </head>
 <body class="font-sans antialiased text-textdark bg-secondary">
 
-    <header class="relative bg-primary text-textlight shadow-md py-4">
-  <div class="container mx-auto flex justify-between items-center px-4">
+    <header class="relative bg-primary text-textlight shadow-md">
+  <div class="container mx-auto flex items-center justify-between px-4 py-4">
+    
+    <!-- Logo -->
     <a href="#" class="text-xl md:text-2xl font-bold text-accent">
       Smart Solution Escapes
     </a>
 
-    <!-- Hamburger Button -->
-    <button id="menuBtn" class="md:hidden text-3xl">
-      ☰
+    <!-- Burger Button -->
+    <button
+      id="menuBtn"
+      aria-label="Menü öffnen"
+      class="md:hidden flex flex-col justify-center gap-1.5"
+    >
+      <span class="w-6 h-0.5 bg-textlight"></span>
+      <span class="w-6 h-0.5 bg-textlight"></span>
+      <span class="w-6 h-0.5 bg-textlight"></span>
     </button>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:block">
       <ul class="flex space-x-6">
-        <li><a href="#hero">Start</a></li>
-        <li><a href="#about">Über uns</a></li>
-        <li><a href="#services">Leistungen</a></li>
-        <li><a href="#benefits">Vorteile</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#hero" class="hover:text-accent">Start</a></li>
+        <li><a href="#about" class="hover:text-accent">Über uns</a></li>
+        <li><a href="#services" class="hover:text-accent">Leistungen</a></li>
+        <li><a href="#benefits" class="hover:text-accent">Vorteile</a></li>
+        <li><a href="#contact" class="hover:text-accent">Kontakt</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Dropdown -->
   <nav
-  id="mobileMenu"
-  class="hidden md:hidden absolute right-4 top-full bg-primary px-6 py-4 shadow-lg rounded-lg">
-  <ul class="flex flex-col items-end space-y-4 text-right">
-    <li><a href="#hero" class="block">Start</a></li>
-    <li><a href="#about" class="block">Über uns</a></li>
-    <li><a href="#services" class="block">Leistungen</a></li>
-    <li><a href="#benefits" class="block">Vorteile</a></li>
-    <li><a href="#contact" class="block">Kontakt</a></li>
-  </ul>
-</nav>
+    id="mobileMenu"
+    class="pointer-events-none opacity-0 scale-95 transition-all duration-200
+           absolute right-4 top-full mt-2 w-56
+           bg-primary rounded-xl shadow-xl"
+  >
+    <ul class="flex flex-col items-end p-4 space-y-4 text-right">
+      <li><a href="#hero" class="block hover:text-accent">Start</a></li>
+      <li><a href="#about" class="block hover:text-accent">Über uns</a></li>
+      <li><a href="#services" class="block hover:text-accent">Leistungen</a></li>
+      <li><a href="#benefits" class="block hover:text-accent">Vorteile</a></li>
+      <li><a href="#contact" class="block hover:text-accent">Kontakt</a></li>
+    </ul>
+  </nav>
 </header>
 
 
