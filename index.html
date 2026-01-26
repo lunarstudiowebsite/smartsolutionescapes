@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SmartSolutionEscapes – Airbnb Co-Hosting & Immobilienmanagement</title>
-    <meta name="description" content="SmartSolutionEscapes bietet professionelles Airbnb Co-Hosting und Kurzzeitvermietungsmanagement. Maximieren Sie Ihre Einnahmen und minimieren Sie Ihren Aufwand mit unserem Expertenservice.">
+    <title>Smart Solution Escapes – Airbnb Co-Hosting & Immobilienmanagement</title>
+    <meta name="description" content="Smart Solution Escapes bietet professionelles Airbnb Co-Hosting und Kurzzeitvermietungsmanagement. Maximieren Sie Ihre Einnahmen und minimieren Sie Ihren Aufwand mit unserem Expertenservice.">
     <meta name="keywords" content="Airbnb Co-Hosting, Ferienvermietung, Immobilienmanagement, Gästemanagement, Kurzzeitvermietung, Smart Solution Escapes, Property Management, Vermietungsservice">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='50%25' font-size='90' text-anchor='middle' dominant-baseline='central'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
 
@@ -27,6 +27,7 @@
             }
         }
     </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         html { scroll-behavior: smooth; }
@@ -43,7 +44,7 @@
             Smart Solution Escapes
         </a>
 
-        <!-- Burger Button (Mobile only) -->
+        <!-- Burger Button (Mobile) -->
         <button id="menuBtn"
                 class="md:hidden flex flex-col justify-center gap-1.5"
                 aria-label="Menü öffnen">
@@ -81,32 +82,135 @@
 </header>
 
 <main>
-    <!-- (AB HIER: DEIN CODE UNVERÄNDERT) -->
-    <!-- Hero -->
-    <section id="hero" class="bg-primary text-textlight py-20 md:py-32 text-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center opacity-20"
-             style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2');"></div>
-        <div class="container mx-auto relative z-10 px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Maximieren Sie Ihre Airbnb-Einnahmen mit <span class="text-accent">SmartSolutionEscapes</span>
-            </h1>
-            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-                Mehr Einnahmen, weniger Aufwand, professionelles Management für Ihre Ferienimmobilie.
-            </p>
-            <a href="#contact"
-               class="bg-accent text-primary hover:bg-yellow-400 font-bold py-3 px-8 rounded-full text-lg transition shadow-lg">
-                Jetzt Kontakt aufnehmen
+
+<!-- Hero Section -->
+<section id="hero" class="bg-primary text-textlight py-20 md:py-32 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20"
+         style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1974&q=80');"></div>
+    <div class="container mx-auto relative z-10 px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Maximieren Sie Ihre Airbnb-Einnahmen mit <span class="text-accent">Smart Solution Escapes</span>
+        </h1>
+        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+            Mehr Einnahmen, weniger Aufwand, professionelles Management für Ihre Ferienimmobilie.
+        </p>
+        <a href="#contact"
+           class="bg-accent text-primary hover:bg-yellow-400 font-bold py-3 px-8 rounded-full text-lg transition-colors duration-300 shadow-lg">
+            Jetzt Kontakt aufnehmen
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-16 md:py-24 bg-secondary">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+            Über Smart Solution Escapes
+        </h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <img src="delicious-breakfast-with-cereals.jpg" width="500" height="500">
+            </div>
+            <div class="md:w-1/2 text-lg leading-relaxed text-textdark">
+                <p class="mb-4">
+                    Smart Solution Escapes ist Ihr vertrauenswürdiger Partner für professionelles Airbnb Co-Hosting
+                    und umfassendes Kurzzeitvermietungsmanagement. Wir verstehen die Herausforderungen, die mit der
+                    Vermietung Ihrer Immobilie verbunden sind, und bieten maßgeschneiderte Lösungen.
+                </p>
+                <p>
+                    Unser Team aus erfahrenen Experten kümmert sich um jeden Aspekt – von der optimalen Präsentation
+                    Ihres Inserats bis zur erstklassigen Gästebetreuung.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-16 md:py-24 bg-primary text-textlight">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-accent">
+            Unsere Leistungen
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Airbnb Co-Hosting</h3>
+                <p>Wir übernehmen die komplette Verwaltung Ihrer Airbnb-Anzeige.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Gästekommunikation</h3>
+                <p>24/7 Kommunikation und Koordination für Ihre Gäste.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Inseratsoptimierung</h3>
+                <p>Professionelle Präsentation für maximale Sichtbarkeit.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Preis- & Belegungsmanagement</h3>
+                <p>Dynamische Preise für maximale Auslastung.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Reinigung & Instandhaltung</h3>
+                <p>Zuverlässige Koordination von Services.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-accent">Rechtliche & Steuerliche Unterstützung</h3>
+                <p>Unterstützung bei Vorschriften und Steuern.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section id="benefits" class="py-16 md:py-24 bg-secondary">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+            Ihre Vorteile mit Smart Solution Escapes
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6 bg-white rounded-lg shadow-lg">
+                <div class="text-5xl text-accent mb-4">💰</div>
+                <h3 class="text-xl font-semibold mb-3">Mehr Einnahmen</h3>
+                <p>Optimierte Preise und hohe Belegungsraten.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-lg">
+                <div class="text-5xl text-accent mb-4">⏰</div>
+                <h3 class="text-xl font-semibold mb-3">Weniger Aufwand</h3>
+                <p>Wir übernehmen die komplette Verwaltung.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-lg">
+                <div class="text-5xl text-accent mb-4">🤝</div>
+                <h3 class="text-xl font-semibold mb-3">Professioneller Service</h3>
+                <p>Erstklassige Betreuung für Sie & Ihre Gäste.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-16 md:py-24 bg-primary text-textlight">
+    <div class="container mx-auto px-4 max-w-2xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-accent">
+            Kontaktieren Sie uns
+        </h2>
+        <p class="text-lg mb-8">
+            Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch.
+        </p>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+            <p class="text-xl font-semibold mb-4">Senden Sie uns eine E-Mail:</p>
+            <a href="mailto:smartsolutionescapes@gmail.com"
+               class="bg-accent text-primary hover:bg-yellow-400 font-bold py-3 px-8 rounded-full text-lg shadow-lg">
+                smartsolutionescapes@gmail.com
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- REST DEINER SEITENBEREICHE BLEIBEN 100% IDENTISCH -->
-    <!-- (About, Services, Benefits, Contact, Footer) -->
 </main>
 
 <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
     <div class="container mx-auto px-4">
-        <p>&copy; 2026 SmartSolutionEscapes. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2023 Smart Solution Escapes. Alle Rechte vorbehalten.</p>
         <p class="mt-2">
             <a href="#" class="hover:text-accent">Impressum</a> |
             <a href="#" class="hover:text-accent">Datenschutz</a>
@@ -114,25 +218,25 @@
     </div>
 </footer>
 
-<!-- MOBILE MENU SCRIPT -->
 <script>
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
 
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        menu.classList.toggle('opacity-0');
-        menu.classList.toggle('scale-95');
-        menu.classList.toggle('pointer-events-none');
-    });
+btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('scale-95');
+    menu.classList.toggle('pointer-events-none');
+});
 
-    document.addEventListener('click', (e) => {
-        if (!menu.contains(e.target) && !btn.contains(e.target)) {
-            menu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-        }
-    });
+document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+    }
+});
 </script>
 
 </body>
 </html>
+
 
