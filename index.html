@@ -15,9 +15,9 @@
                 extend: {
                     colors: {
                         primary: '#171717', // Anthracite
-                        secondary: '#fffff', // White
+                        secondary: '#ffffff', // White
                         accent: '#b6ad8d', // Gold
-                        textlight: '#fffff', // Off-white for dark backgrounds
+                        textlight: '#ffffff', // Off-white for dark backgrounds
                         textdark: '#99A1AF' // Dark gray for light backgrounds
                     },
                     fontFamily: {
@@ -79,7 +79,7 @@
                 Maximieren Sie Ihre Airbnb-Einnahmen mit <span class="text-accent">SMARTSOLUTIONESCAPES</span>
             </h1>
                 <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white">
-                   Mehr Einnahmen, weniger Aufwand, professionelles Management für Ihre Immobilie.
+                    Mehr Einnahmen, weniger Aufwand, professionelles Management für Ihre Immobilie.
                 </p>
                 <a href="#contact" class="bg-accent text-primary hover:bg-stone-300 font-bold py-3 px-8 rounded-full text-lg transition-colors duration-300 shadow-lg block w-fit mx-auto">
                     Jetzt Kontakt aufnehmen
@@ -91,9 +91,9 @@
         <section id="about" class="py-16 md:py-24 bg-secondary">
             <div class="container mx-auto px-4 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Über Smart Solution Escapes</h2>
-                <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
                     <div class="md:w-1/2">
-                        <img src="logo.jpg" alt="Modernes Interieur einer Ferienwohnung" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                        <img src="logo.jpg" alt="Logo Smart Solution Escapes" class="rounded-lg shadow-xl w-full h-auto object-cover">
                     </div>
                     <div class="md:w-1/2 text-lg leading-relaxed text-textdark">
                         <p class="mb-4">
@@ -102,6 +102,22 @@
                         <p>
                             Unser Team aus erfahrenen Experten kümmert sich um jeden Aspekt – von der optimalen Präsentation Ihres Inserats bis zur erstklassigen Gästebetreuung. Verlassen Sie sich auf unsere Professionalität, Zuverlässigkeit und unser Engagement, um den Wert Ihrer Immobilie voll auszuschöpfen.
                         </p>
+                    </div>
+                </div>
+
+                <!-- Neue Porträt-Bilder unter dem Text/Logo -->
+                <div class="flex justify-center gap-8 md:gap-16">
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-48 md:h-48 overflow-hidden rounded-full border-4 border-accent shadow-lg mb-4 mx-auto">
+                            <img src="portrait1.png" alt="Auftraggeber 1" class="w-full h-full object-cover bg-stone-100">
+                        </div>
+                        <p class="font-semibold text-primary">Marcus Schneider</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-48 md:h-48 overflow-hidden rounded-full border-4 border-accent shadow-lg mb-4 mx-auto">
+                            <img src="portrait2.png" alt="Auftraggeber 2" class="w-full h-full object-cover bg-stone-100">
+                        </div>
+                        <p class="font-semibold text-primary">Sarah Weber</p>
                     </div>
                 </div>
             </div>
@@ -203,7 +219,6 @@
                     mobileMenu.classList.toggle('hidden');
                 });
 
-                // Close mobile menu when a link is clicked
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', function() {
                         mobileMenu.classList.add('hidden');
